@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e2022;
+  --color-secondary: #677788;
+  --color-accent: #009e74;
+  --color-accentDark: #008663;
+  --color-body: #ffff;
+  --color-skin: #ced4da;
+  --color-form: #ffff;
+  --color-grayy: #f3f4f6;
+  /* Background Colors */
+  --invoice-bg: #ffffff;
+  --invoice-card-from: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+  --invoice-card-bill: linear-gradient(to bottom right, #f9fafb, #f1f5f9);
+  --invoice-detail-bg: #ffffff;
+  --invoice-table-bg: #ffffff;
+  --invoice-table-hover: #f9fafb;
+  /* Primary & Accent Colors */
+  --invoice-primary: #2563eb;
+  --invoice-accent-positive: #16a34a;
+  --invoice-accent-negative: #dc2626;
+
+  /* Text Colors */
+  --invoice-text-primary: #1f2937;
+  --invoice-text-secondary: #4b5563;
+  --invoice-text-muted: #6b7280;
+
+  /* Border Colors */
+  --invoice-border: #e5e7eb;
+  --invoice-border-light: #f3f4f6;
+
+  /* Notes & Terms */
+  --invoice-note-bg: #fef3c7;
+  --invoice-note-accent: #fbbf24;
+  --invoice-terms-bg: #f9fafb;
+  --invoice-terms-accent: #9ca3af;
+}
+
+@layer base {
+  body {
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+  }
+}
+
+.dark {
+  --color-body: #212529;
+  --color-primary: #ffff;
+  --color-secondary: #ffff;
+  --color-skin: #343a40;
+  --color-form: #343a40;
+  --color-grayy: #343a40;
+
+  /* Background Colors */
+  --invoice-bg: #111827;
+  --invoice-card-from: #1f2937;
+  --invoice-card-bill: #1f2937;
+  --invoice-detail-bg: #1f2937;
+  --invoice-table-bg: #1f2937;
+  --invoice-table-hover: #374151;
+
+  /* Primary & Accent Colors */
+  --invoice-primary: #3b82f6;
+  --invoice-accent-positive: #22c55e;
+  --invoice-accent-negative: #ef4444;
+
+  /* Text Colors */
+  --invoice-text-primary: #f3f4f6;
+  --invoice-text-secondary: #d1d5db;
+  --invoice-text-muted: #9ca3af;
+
+  /* Border Colors */
+  --invoice-border: #374151;
+  --invoice-border-light: #4b5563;
+
+  /* Notes & Terms */
+  --invoice-note-bg: rgba(245, 158, 11, 0.15);
+  --invoice-note-accent: #fbbf24;
+  --invoice-terms-bg: #1f2937;
+  --invoice-terms-accent: #6b7280;
+}
+body {
+  background-color: var(--color-body);
+  color: var(--color-primary);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
